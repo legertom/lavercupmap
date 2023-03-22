@@ -127,17 +127,47 @@
     </div>
     <div class="title">
       <h1>Laver Cup</h1>
-      <h2 class="subtitle">Choreograph Map</h2>
+      <h2 class="subtitle">Geospatial Analysis</h2>
       <div class="button-box">
-        <a href="#" class="title-button button instructions">Instructions</a>
-        <a href="#" class="title-button button about">About</a>
+        <a href="#" class="title-button button instructions" data-modal="instructionsModal">Instructions</a>
+        <a href="#" class="title-button button about" data-modal="aboutModal">About</a>
       </div>
+      
+      <!-- Instructions Modal -->
+      <div id="instructionsModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="modal-title">Instructions</h2>
+          <p class="modal-text">
+            <ol class="modal-list">
+              <li><strong>Explore the map: </strong>Navigate the map to view the individual and collective points earned by ATP players from different countries. The color shading of each country corresponds to the strength of its players – darker shades indicate more points or players, while lighter shades represent fewer points or players.</li>
+              <li><strong>Toggle between Points and Players:</strong> Use the toggle buttons to switch between displaying the map based on points earned or the number of players from each country.</li>
+              <li><strong>Enable Laver Cup team colors: </strong>Activate the toggle buttons to display the countries with players on Team World (red) and Team Europe (blue) during the Laver Cup.</li>
+              <li><strong>Filter by player age:</strong> Use the age slider to narrow down the data used for visualizing the map. For example, you can choose to display data for players aged 30 and older to see how the Laver Cup would look if only older players were allowed to participate.</li>
+            </ol>
+          </p>
+        </div>
+      </div>
+      
+      <!-- About Modal -->
+      <div id="aboutModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="modal-title">About</h2>
+          <p class="modal-text">Welcome to the Laver Cup Map, an interactive data visualization tool that showcases the performance and distribution of ATP players across the globe. Our map highlights the individual and collective points earned by players from different countries, providing a unique perspective on the world of tennis.
+<br /><br />
+         The Laver Cup is a one-of-a-kind tennis tournament that sorts players into two teams – Team World and Team Europe – rather than categorizing them by the countries they represent, as is done in the Davis Cup and the Olympics. This map aims to offer valuable insights into the distribution of tennis talent in the context of the Laver Cup, enabling fans, players, and analysts to better understand the dynamics of this prestigious competition.</p>
+          
+          </div>
+      </div>
+      
     </div>
 
     <div class="content-area">
       <div id="map"></div>
     </div>
     <script src="./script.js"></script>
+    <script src="./modal.js"></script>
     
   </body>
 </html>
