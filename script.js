@@ -194,7 +194,8 @@ function updateMap(countryData, rankings, mapType) {
           `<p>Country:  <span>${d.properties.ADMIN}</span></p>
             <p>Total Points:  <span>${totalPoints.toLocaleString()}</span></p>
             <p>Total Players:  <span>${players.length}</span></p>
-            <p>Average age:  <span>${d3.format(".2f")(
+           
+            <p>Average age:  <span>${d3.format(".1f")(
               d3.mean(players, (player) => player.Age)
             )} years </span></p>
 
