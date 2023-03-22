@@ -29,7 +29,7 @@ const projection = d3.geoMercator().center([40, 40]).scale(110);
 
 const path = d3.geoPath().projection(projection);
 
-Promise.all([d3.json("./countries.json"), d3.csv("./rankings.csv")]).then(
+Promise.all([d3.json("./countries2.json"), d3.csv("./rankings-22-03-2023.csv")]).then(
   function (data) {
     const mapData = data[0];
     rankings = data[1];
@@ -192,7 +192,7 @@ function updateMap(countryData, rankings, mapType) {
       tooltip
         .html(
           `<p>Country:  <span>${d.properties.ADMIN}</span></p>
-            <p>Total Points:  <span>${totalPoints}</span></p>
+            <p>Total Points:  <span>${totalPoints.toLocaleString()}</span></p>
             <p>Total Players:  <span>${players.length}</span></p>
             <p>Average age:  <span>${d3.format(".2f")(
               d3.mean(players, (player) => player.Age)
@@ -212,9 +212,7 @@ function updateMap(countryData, rankings, mapType) {
       tooltip
         .html(
           `<p>Country:  <span>${d.properties.ADMIN}</span></p>
-            <p>Total Points:  <span>N/A</span></p>
-            <p>Total Players:  <span>N/A</span></p>
-            <p>Average age:  <span>N/A</span></p>
+            <p>No players.</p>
             `
         )
         .style("left", event.pageX + 10 + "px")
