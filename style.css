@@ -296,8 +296,11 @@
 
  #map {
     background-color: white;
+  
  }
 /* SVG Range slider styling */
+
+
 
 .axis line {
     stroke: #aaa;

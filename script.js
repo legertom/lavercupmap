@@ -22,7 +22,7 @@ const svg = d3
   .append("svg")
   .attr("height", height)
   .attr("width", width)
-  .style("border", "1px solid #ccc")
+  // .style("border", "1px solid #ccc")
   .style("border-radius", "4px");
 
 const projection = d3.geoMercator().center([40, 40]).scale(110);
