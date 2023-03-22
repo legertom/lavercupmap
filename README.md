@@ -3,7 +3,7 @@
 
 # Laver Cup - Geospatial Visualization
 
-Welcome to the Laver Cup - Geospatial Visualization, an interactive data visualization tool that showcases the performance and distribution of ATP players across the globe in the context of the Laver Cup.
+Welcome to the <a href="https://legertom.github.io/lavercupmap/" target="_blank">Laver Cup - Geovisualization Map</a>, an interactive data visualization tool that showcases the performance and distribution of ATP players across the globe in the context of the Laver Cup.
 
 <div style="text-align:center;">
   <img src="laver-map-screenshot.png" alt="Laver Cup Map Screenshot" width="50%">
