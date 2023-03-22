@@ -20,7 +20,7 @@
       .tooltip {
         opacity: 0;
         position: absolute;
-        background-color: black;
+        background-color: #a1c4fd;
         color: #fff;
         padding: 5px;
         border-radius: 4px;
@@ -30,6 +30,7 @@
       
       .tooltip p {
         margin-bottom: 4px;
+        font-family: lato;
       }
       
       .criteria {
