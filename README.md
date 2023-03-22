@@ -1,4 +1,5 @@
-<h2 align="center">The Laver Cup is an annual international men's tennis tournament where the world's top players compete in a unique team format, with Team Europe facing off against Team World.</h2>
+<h2 align="center">The <a href="https://lavercup.com/" target="_blank">Laver Cup</a> is an annual international men's tennis tournament where the world's top players compete in a unique team format, with Team Europe facing off against Team World.</h2>
+
 
 # Laver Cup - Geospatial Visualization
 
